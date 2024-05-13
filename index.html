@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financial Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Financial Calculator</h1>
+    </header>
+    <main>
+        <div class="calculator">
+            <label for="initialInvestment">Initial Investment:</label>
+            <input type="number" id="initialInvestment" placeholder="Enter initial investment">
+            
+            <label for="discountRate">Discount Rate (%):</label>
+            <input type="number" id="discountRate" placeholder="Enter discount rate">
+            
+            <div id="cashFlowsInput">
+                <label for="year1">Year 1:</label>
+                <input type="number" id="year1" placeholder="Cash flow for year 1">
+            </div>
+            <button onclick="addYearInput()">Add Year</button>
+            
+            <button onclick="calculateAll()">Calculate</button>
+            
+            <div id="result">
+                <p>Net Profit: <span id="netProfitResult"></span></p>
+                <p>Return on Investment (ROI): <span id="roiResult"></span></p>
+                <p>Payback Period: <span id="paybackResult"></span></p>
+                <p>Net Present Value (NPV): <span id="npvResult"></span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Group 3</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
